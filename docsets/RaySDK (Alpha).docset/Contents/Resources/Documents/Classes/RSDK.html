@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>RSDK Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/RSDK" class="dashAnchor"></a>
+    <a title="RSDK Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">RaySDK (Alpha) Docs</a> (100% documented)</p>
+        <p class="header-right"><a href="https://github.com/madewithray/ray-ios-sdk"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">RaySDK (Alpha) Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        RSDK Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+          <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/RSDK.html">RSDK</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RSDKBeacon.html">RSDKBeacon</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+          <a href="../Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums.html#/s:O6RaySDK17AuthorizationType">AuthorizationType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums.html#/s:O6RaySDK14BluetoothState">BluetoothState</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+          <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/RSDK.html">RSDK</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+          <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/RaySDKDelegate.html">RaySDKDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>RSDK</h1>
+            <p>The <code>RSDK</code> class provides a centralized point of control and coordination for interfacing with Ray beacons.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+                <div class="task-name-container">
+                  <a name="/RaySDK%20delegate"></a>
+                  <a name="//apple_ref/swift/Section/RaySDK delegate" class="dashAnchor"></a>
+                  <a href="#/RaySDK%20delegate">
+                    <h3 class="section-name">RaySDK delegate</h3>
+                  </a>
+                </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC6RaySDK4RSDK8delegateXwGSqPS_14RaySDKDelegate__"></a>
+                    <a name="//apple_ref/swift/Property/delegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC6RaySDK4RSDK8delegateXwGSqPS_14RaySDKDelegate__">delegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The RaySDK delegate</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="Swift">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">delegate</span><span class="p">:</span> <span class="kt">RaySDKDelegate</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+                <div class="task-name-container">
+                  <a name="/Config%20variables"></a>
+                  <a name="//apple_ref/swift/Section/Config variables" class="dashAnchor"></a>
+                  <a href="#/Config%20variables">
+                    <h3 class="section-name">Config variables</h3>
+                  </a>
+                </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC6RaySDK4RSDK17beaconRSSITriggerSi"></a>
+                    <a name="//apple_ref/swift/Property/beaconRSSITrigger" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC6RaySDK4RSDK17beaconRSSITriggerSi">beaconRSSITrigger</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The value where a beacon should be registered as <q>in-range</q></p>
+
+<p>Default value is -75</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="Swift">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">beaconRSSITrigger</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC6RaySDK4RSDK22beaconMinimumThresholdSi"></a>
+                    <a name="//apple_ref/swift/Property/beaconMinimumThreshold" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC6RaySDK4RSDK22beaconMinimumThresholdSi">beaconMinimumThreshold</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The minimum value of the range where the beacon should stay in in-order to be considered <q>in-range</q></p>
+
+<p>Value must be less than <code>beaconMaximumThreshold</code> and within range of (∞, 0)</p>
+
+<p>Default value is -80</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="Swift">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">beaconMinimumThreshold</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC6RaySDK4RSDK22beaconMaximumThresholdSi"></a>
+                    <a name="//apple_ref/swift/Property/beaconMaximumThreshold" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC6RaySDK4RSDK22beaconMaximumThresholdSi">beaconMaximumThreshold</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The maximum value of the range where the beacon should stay in in-order to be considered <q>in-range</q></p>
+
+<p>Value must be greater than <code>beaconMinimumThreshold</code> and within range of (∞, 0]</p>
+
+<p>Default value is 0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="Swift">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">beaconMaximumThreshold</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC6RaySDK4RSDK17beaconExitTriggerSi"></a>
+                    <a name="//apple_ref/swift/Property/beaconExitTrigger" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC6RaySDK4RSDK17beaconExitTriggerSi">beaconExitTrigger</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The value where a beacon should be registered as <q>out-of-range</q></p>
+
+<p>Value must be less than <code>beaconMinimumThreshold</code></p>
+
+<p>Default value is -90</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="Swift">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">beaconExitTrigger</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC6RaySDK4RSDK16walkInTimeToWaitSd"></a>
+                    <a name="//apple_ref/swift/Property/walkInTimeToWait" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC6RaySDK4RSDK16walkInTimeToWaitSd">walkInTimeToWait</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The time to wait (seconds) before a beacon is registered when entering its region</p>
+
+<p>Default value is 10 seconds</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="Swift">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">walkInTimeToWait</span><span class="p">:</span> <span class="kt">NSTimeInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC6RaySDK4RSDK17walkOutTimeToWaitSd"></a>
+                    <a name="//apple_ref/swift/Property/walkOutTimeToWait" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC6RaySDK4RSDK17walkOutTimeToWaitSd">walkOutTimeToWait</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The time to wait (seconds) before a beacon is registered when exiting its region</p>
+
+<p>Default value is 10 seconds</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="Swift">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">walkOutTimeToWait</span><span class="p">:</span> <span class="kt">NSTimeInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC6RaySDK4RSDK25subsequentRangingIntervalSd"></a>
+                    <a name="//apple_ref/swift/Property/subsequentRangingInterval" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC6RaySDK4RSDK25subsequentRangingIntervalSd">subsequentRangingInterval</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The time to wait (seconds) between identifying identical beacons</p>
+
+<p>Default value is 6 hours</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="Swift">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">subsequentRangingInterval</span><span class="p">:</span> <span class="kt">NSTimeInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC6RaySDK4RSDK36enableBackgroundProcessTimeExtensionSb"></a>
+                    <a name="//apple_ref/swift/Property/enableBackgroundProcessTimeExtension" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC6RaySDK4RSDK36enableBackgroundProcessTimeExtensionSb">enableBackgroundProcessTimeExtension</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>If <code>true</code>, background process time will be extended while app is in background</p>
+
+<p>Default value is <code>false</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="Swift">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">enableBackgroundProcessTimeExtension</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC6RaySDK4RSDK23enableContinuousRangingSb"></a>
+                    <a name="//apple_ref/swift/Property/enableContinuousRanging" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC6RaySDK4RSDK23enableContinuousRangingSb">enableContinuousRanging</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>If <code>true</code>, <code>rsdkDidRangeRayBeacon:inRegionWithIdentifier:</code> will continuously return all ranged beacons. Avoid continuous ranging to conserve battery.</p>
+
+<p>Default value is <code>false</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="Swift">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">enableContinuousRanging</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC6RaySDK4RSDK19enableCustomWalkOutSb"></a>
+                    <a name="//apple_ref/swift/Property/enableCustomWalkOut" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC6RaySDK4RSDK19enableCustomWalkOutSb">enableCustomWalkOut</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>If <code>true</code>, <code>rsdkDidWalkOutOfBeacon:inRegionWithIdentifier:</code> will adhere to <code>beaconExitTrigger</code> and <code>walkOutTimeToWait</code> values.</p>
+
+<p><code>enableContinuousRanging</code> must be set to <code>true</code></p>
+
+<p>Default value is <code>false</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="Swift">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">enableCustomWalkOut</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+                <div class="task-name-container">
+                  <a name="/Initializers%20&amp;%20Deinitializer"></a>
+                  <a name="//apple_ref/swift/Section/Initializers &amp; Deinitializer" class="dashAnchor"></a>
+                  <a href="#/Initializers%20&amp;%20Deinitializer">
+                    <h3 class="section-name">Initializers &amp; Deinitializer</h3>
+                  </a>
+                </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZFC6RaySDK4RSDK24sharedInstanceWithApiKeyFMS0_FSST_"></a>
+                    <a name="//apple_ref/swift/Method/sharedInstanceWithApiKey(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFC6RaySDK4RSDK24sharedInstanceWithApiKeyFMS0_FSST_">sharedInstanceWithApiKey(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initializes a <code>RSDK</code> instance with the api key</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="Swift">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kd">func</span> <span class="nf">sharedInstanceWithApiKey</span><span class="p">(</span><span class="nv">apiKey</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>apiKey</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The api key for making Ray requests</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvC6RaySDK4RSDK14sharedInstanceS0_"></a>
+                    <a name="//apple_ref/swift/Variable/sharedInstance" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvC6RaySDK4RSDK14sharedInstanceS0_">sharedInstance</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the RaySDK singleton instance</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="Swift">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="k">var</span> <span class="nv">sharedInstance</span><span class="p">:</span> <span class="kt">RSDK</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The RaySDK instance created in <code>RSDK</code></p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+                <div class="task-name-container">
+                  <a name="/Monitoring%20methods"></a>
+                  <a name="//apple_ref/swift/Section/Monitoring methods" class="dashAnchor"></a>
+                  <a href="#/Monitoring%20methods">
+                    <h3 class="section-name">Monitoring methods</h3>
+                  </a>
+                </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC6RaySDK4RSDK15startMonitoringFS0_FT_T_"></a>
+                    <a name="//apple_ref/swift/Method/startMonitoring()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC6RaySDK4RSDK15startMonitoringFS0_FT_T_">startMonitoring()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Starts monitoring for Ray beacons.</p>
+
+<p>If location services authorization has not been requested, will attempt to request if status is <code>NotDetermined</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="Swift">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">startMonitoring</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC6RaySDK4RSDK14stopMonitoringFS0_FT_T_"></a>
+                    <a name="//apple_ref/swift/Method/stopMonitoring()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC6RaySDK4RSDK14stopMonitoringFS0_FT_T_">stopMonitoring()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Stops monitoring for Ray beacons.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="Swift">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">stopMonitoring</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC6RaySDK4RSDK12startRangingFS0_FT_T_"></a>
+                    <a name="//apple_ref/swift/Method/startRanging()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC6RaySDK4RSDK12startRangingFS0_FT_T_">startRanging()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Start ranging for all monitored regions</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="Swift">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">startRanging</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC6RaySDK4RSDK11stopRangingFS0_FT_T_"></a>
+                    <a name="//apple_ref/swift/Method/stopRanging()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC6RaySDK4RSDK11stopRangingFS0_FT_T_">stopRanging()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Stop ranging for all currently ranged regions</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="Swift">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">stopRanging</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC6RaySDK4RSDK20setAuthorizationTypeFS0_FOS_17AuthorizationTypeT_"></a>
+                    <a name="//apple_ref/swift/Method/setAuthorizationType(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC6RaySDK4RSDK20setAuthorizationTypeFS0_FOS_17AuthorizationTypeT_">setAuthorizationType(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets the location service authorization request</p>
+
+<ul>
+<li>Always</li>
+<li>WhenInUse (Default)</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="Swift">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setAuthorizationType</span><span class="p">(</span><span class="nv">type</span><span class="p">:</span> <span class="kt">AuthorizationType</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>authorizationType</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The authorization type to request</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2015 <a class="link" href="http://seanooi.com" target="_blank" rel="external">Sean Ooi</a>. All rights reserved. (Last updated: 2015-06-17)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.2.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>RSDK Extension Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Extension/RSDK" class="dashAnchor"></a>
+    <a title="RSDK Extension Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">RaySDK (Alpha) Docs</a> (100% documented)</p>
+        <p class="header-right"><a href="https://github.com/madewithray/ray-ios-sdk"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">RaySDK (Alpha) Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        RSDK Extension Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+          <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/RSDK.html">RSDK</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RSDKBeacon.html">RSDKBeacon</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+          <a href="../Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums.html#/s:O6RaySDK17AuthorizationType">AuthorizationType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums.html#/s:O6RaySDK14BluetoothState">BluetoothState</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+          <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/RSDK.html">RSDK</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+          <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/RaySDKDelegate.html">RaySDKDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>RSDK</h1>
+            <p>Tells the delegate that the user left the specified region.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+                <div class="task-name-container">
+                  <a name="/Responding%20to%20Authorization%20Changes"></a>
+                  <a name="//apple_ref/swift/Section/Responding to Authorization Changes" class="dashAnchor"></a>
+                  <a href="#/Responding%20to%20Authorization%20Changes">
+                    <h3 class="section-name">Responding to Authorization Changes</h3>
+                  </a>
+                </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC6RaySDK4RSDK15locationManagerFS0_FTGSQCSo17CLLocationManager_28didChangeAuthorizationStatusOSC21CLAuthorizationStatus_T_"></a>
+                    <a name="//apple_ref/swift/Method/locationManager(_:didChangeAuthorizationStatus:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC6RaySDK4RSDK15locationManagerFS0_FTGSQCSo17CLLocationManager_28didChangeAuthorizationStatusOSC21CLAuthorizationStatus_T_">locationManager(_:didChangeAuthorizationStatus:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Tells the delegate that the authorization status for the application changed.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="Swift">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">locationManager</span><span class="p">(</span><span class="nv">manager</span><span class="p">:</span> <span class="kt">CLLocationManager</span><span class="o">!</span><span class="p">,</span> <span class="n">didChangeAuthorizationStatus</span> <span class="nv">status</span><span class="p">:</span> <span class="kt">CLAuthorizationStatus</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>manager</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The location manager object reporting the event.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>status</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The new authorization status for the application.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+                <div class="task-name-container">
+                  <a name="/Responding%20to%20Region%20Events"></a>
+                  <a name="//apple_ref/swift/Section/Responding to Region Events" class="dashAnchor"></a>
+                  <a href="#/Responding%20to%20Region%20Events">
+                    <h3 class="section-name">Responding to Region Events</h3>
+                  </a>
+                </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC6RaySDK4RSDK15locationManagerFS0_FTGSQCSo17CLLocationManager_17didDetermineStateOSC13CLRegionState9forRegionGSQCSo8CLRegion__T_"></a>
+                    <a name="//apple_ref/swift/Method/locationManager(_:didDetermineState:forRegion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC6RaySDK4RSDK15locationManagerFS0_FTGSQCSo17CLLocationManager_17didDetermineStateOSC13CLRegionState9forRegionGSQCSo8CLRegion__T_">locationManager(_:didDetermineState:forRegion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Tells the delegate about the state of the specified region.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="Swift">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">locationManager</span><span class="p">(</span><span class="nv">manager</span><span class="p">:</span> <span class="kt">CLLocationManager</span><span class="o">!</span><span class="p">,</span> <span class="n">didDetermineState</span> <span class="nv">state</span><span class="p">:</span> <span class="kt">CLRegionState</span><span class="p">,</span> <span class="n">forRegion</span> <span class="nv">region</span><span class="p">:</span> <span class="kt">CLRegion</span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>manager</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The location manager object reporting the event.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>state</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The state of the specified region. For a list of possible values, see the <code>CLRegionState</code> type.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>region</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The region whose state was determined.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC6RaySDK4RSDK15locationManagerFS0_FTGSQCSo17CLLocationManager_14didEnterRegionGSQCSo8CLRegion__T_"></a>
+                    <a name="//apple_ref/swift/Method/locationManager(_:didEnterRegion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC6RaySDK4RSDK15locationManagerFS0_FTGSQCSo17CLLocationManager_14didEnterRegionGSQCSo8CLRegion__T_">locationManager(_:didEnterRegion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Tells the delegate that the user entered the specified region.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="Swift">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">locationManager</span><span class="p">(</span><span class="nv">manager</span><span class="p">:</span> <span class="kt">CLLocationManager</span><span class="o">!</span><span class="p">,</span> <span class="n">didEnterRegion</span> <span class="nv">region</span><span class="p">:</span> <span class="kt">CLRegion</span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>manager</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The location manager object reporting the event.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>region</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An object containing information about the region that was entered.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC6RaySDK4RSDK15locationManagerFS0_FTGSQCSo17CLLocationManager_13didExitRegionGSQCSo8CLRegion__T_"></a>
+                    <a name="//apple_ref/swift/Method/locationManager(_:didExitRegion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC6RaySDK4RSDK15locationManagerFS0_FTGSQCSo17CLLocationManager_13didExitRegionGSQCSo8CLRegion__T_">locationManager(_:didExitRegion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Tells the delegate that the user left the specified region.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="Swift">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">locationManager</span><span class="p">(</span><span class="nv">manager</span><span class="p">:</span> <span class="kt">CLLocationManager</span><span class="o">!</span><span class="p">,</span> <span class="n">didExitRegion</span> <span class="nv">region</span><span class="p">:</span> <span class="kt">CLRegion</span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>manager</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The location manager object reporting the event.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>region</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An object containing information about the region that was exited.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+                <div class="task-name-container">
+                  <a name="/Responding%20to%20Ranging%20Events"></a>
+                  <a name="//apple_ref/swift/Section/Responding to Ranging Events" class="dashAnchor"></a>
+                  <a href="#/Responding%20to%20Ranging%20Events">
+                    <h3 class="section-name">Responding to Ranging Events</h3>
+                  </a>
+                </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC6RaySDK4RSDK15locationManagerFS0_FTGSQCSo17CLLocationManager_15didRangeBeaconsGSQGSaPSs9AnyObject___8inRegionGSQCSo14CLBeaconRegion__T_"></a>
+                    <a name="//apple_ref/swift/Method/locationManager(_:didRangeBeacons:inRegion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC6RaySDK4RSDK15locationManagerFS0_FTGSQCSo17CLLocationManager_15didRangeBeaconsGSQGSaPSs9AnyObject___8inRegionGSQCSo14CLBeaconRegion__T_">locationManager(_:didRangeBeacons:inRegion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Tells the delegate that one or more beacons are in range.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="Swift">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">locationManager</span><span class="p">(</span><span class="nv">manager</span><span class="p">:</span> <span class="kt">CLLocationManager</span><span class="o">!</span><span class="p">,</span> <span class="n">didRangeBeacons</span> <span class="nv">beacons</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyObject</span><span class="p">]</span><span class="o">!</span><span class="p">,</span> <span class="n">inRegion</span> <span class="nv">region</span><span class="p">:</span> <span class="kt">CLBeaconRegion</span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>manager</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The location manager object reporting the event.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>beacons</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An array of <code>CLBeacon</code> objects representing the beacons currently in range. If beacons is empty, you can assume that no beacons matching the specified region are in range. When a specific beacon is no longer in beacons, that beacon is no longer received by the device. You can use the information in the <code>CLBeacon</code> objects to determine the range of each beacon and its identifying information.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>region</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The region object containing the parameters that were used to locate the beacons.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC6RaySDK4RSDK15locationManagerFS0_FTGSQCSo17CLLocationManager_18didUpdateLocationsGSQGSaPSs9AnyObject____T_"></a>
+                    <a name="//apple_ref/swift/Method/locationManager(_:didUpdateLocations:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC6RaySDK4RSDK15locationManagerFS0_FTGSQCSo17CLLocationManager_18didUpdateLocationsGSQGSaPSs9AnyObject____T_">locationManager(_:didUpdateLocations:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Tells the delegate that new location data is available.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="Swift">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">locationManager</span><span class="p">(</span><span class="nv">manager</span><span class="p">:</span> <span class="kt">CLLocationManager</span><span class="o">!</span><span class="p">,</span> <span class="n">didUpdateLocations</span> <span class="nv">locations</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyObject</span><span class="p">]</span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>manager</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The location manager object that generated the update event.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>locations</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An array of <code>CLLocation</code> objects containing the location data. This array always contains at least one object representing the current location. If updates were deferred or if multiple locations arrived before they could be delivered, the array may contain additional entries. The objects in the array are organized in the order in which they occurred. Therefore, the most recent location update is at the end of the array.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC6RaySDK4RSDK28centralManagerDidUpdateStateFS0_FGSQCSo16CBCentralManager_T_"></a>
+                    <a name="//apple_ref/swift/Method/centralManagerDidUpdateState(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC6RaySDK4RSDK28centralManagerDidUpdateStateFS0_FGSQCSo16CBCentralManager_T_">centralManagerDidUpdateState(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Invoked when the central manager’s state is updated.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="Swift">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">centralManagerDidUpdateState</span><span class="p">(</span><span class="nv">central</span><span class="p">:</span> <span class="kt">CBCentralManager</span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>central</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The central manager whose state has changed.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC6RaySDK4RSDK14centralManagerFS0_FTGSQCSo16CBCentralManager_21didDiscoverPeripheralGSQCSo12CBPeripheral_17advertisementDataGSQGVSs10DictionaryCSo8NSObjectPSs9AnyObject___4RSSIGSQCSo8NSNumber__T_"></a>
+                    <a name="//apple_ref/swift/Method/centralManager(_:didDiscoverPeripheral:advertisementData:RSSI:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC6RaySDK4RSDK14centralManagerFS0_FTGSQCSo16CBCentralManager_21didDiscoverPeripheralGSQCSo12CBPeripheral_17advertisementDataGSQGVSs10DictionaryCSo8NSObjectPSs9AnyObject___4RSSIGSQCSo8NSNumber__T_">centralManager(_:didDiscoverPeripheral:advertisementData:RSSI:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Invoked when the central manager discovers a peripheral while scanning.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="Swift">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">centralManager</span><span class="p">(</span><span class="nv">central</span><span class="p">:</span> <span class="kt">CBCentralManager</span><span class="o">!</span><span class="p">,</span> <span class="n">didDiscoverPeripheral</span> <span class="nv">peripheral</span><span class="p">:</span> <span class="kt">CBPeripheral</span><span class="o">!</span><span class="p">,</span> <span class="nv">advertisementData</span><span class="p">:</span> <span class="p">[</span><span class="kt">NSObject</span> <span class="p">:</span> <span class="kt">AnyObject</span><span class="p">]</span><span class="o">!</span><span class="p">,</span> <span class="kt">RSSI</span><span class="p">:</span> <span class="kt">NSNumber</span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>central</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The central manager providing the update.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>peripheral</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The discovered peripheral.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>advertisementData</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A dictionary containing any advertisement data.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>RSSI</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The current received signal strength indicator (RSSI) of the peripheral, in decibels.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2015 <a class="link" href="http://seanooi.com" target="_blank" rel="external">Sean Ooi</a>. All rights reserved. (Last updated: 2015-06-17)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.2.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

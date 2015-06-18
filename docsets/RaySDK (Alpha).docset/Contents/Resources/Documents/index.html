@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>RaySDK (Alpha)  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+  </head>
+  <body>
+    <a title="RaySDK (Alpha)  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html">RaySDK (Alpha) Docs</a> (100% documented)</p>
+        <p class="header-right"><a href="https://github.com/madewithray/ray-ios-sdk"><img src="img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html">RaySDK (Alpha) Reference</a>
+        <img id="carat" src="img/carat.png" />
+        RaySDK (Alpha)  Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+          <a href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/RSDK.html">RSDK</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/RSDKBeacon.html">RSDKBeacon</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+          <a href="Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Enums.html#/s:O6RaySDK17AuthorizationType">AuthorizationType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums.html#/s:O6RaySDK14BluetoothState">BluetoothState</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+          <a href="Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Extensions/RSDK.html">RSDK</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+          <a href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Protocols/RaySDKDelegate.html">RaySDKDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            
+            <a href='#raysdk_for_ios' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h1 id='raysdk_for_ios'>RaySDK for iOS</h1>
+
+<p>The RaySDK allows you to interact with Ray beacons in the wild.</p>
+<a href='#prerequisites' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='prerequisites'>Prerequisites</h2>
+
+<p>RaySDK is compatible with projects for iOS 8 and above</p>
+<a href='#installation' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='installation'>Installation</h2>
+
+<ol>
+<li>Drag the <strong>RaySDK.framework</strong> file into your project</li>
+<li>Under your peoject&rsquo;s target&rsquo;s <em>General</em> settings, make sure <strong>RaySDK.framework</strong> is included under <em>Embedded Binaries</em> as well as <em>Linked Frameworks and Libraries</em></li>
+</ol>
+<a href='#usage' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='usage'>Usage</h2>
+
+<ol>
+<li>Register your <em>API Key</em> by calling <code>RSDK.sharedInstanceWithApiKey(&quot;YourAPIKey&quot;)</code></li>
+<li>Set the SDK delegate <code>RSDK.sharedInstance.delegate</code></li>
+<li>Set the location service <code>AuthorizationType</code> to request. <code>.Always</code> or <code>.WhenInUse</code>. 
+
+<ul>
+<li>If location services has not yet been requested, the SDK will attempt to request for it.</li>
+<li>Make sure the <code>NSLocationAlwaysUsageDescription</code> or <code>NSLocationWhenInUseUsageDescription</code> key is present in your plist file.</li>
+</ul></li>
+<li>Call <code>RSDK.sharedInstance.startMonitoring()</code> to begin monitoring for <em>Ray</em> beacons</li>
+</ol>
+<a href='#optional_configurations' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='optional_configurations'>Optional Configurations</h3>
+
+<table><thead>
+<tr>
+<th><strong>Variable</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>beaconRSSITrigger</code></td>
+<td>The value where a beacon should be registered as <q>in-range</q>. Default value is -75.</td>
+</tr>
+<tr>
+<td><code>beaconMinimumThreshold</code></td>
+<td>The minimum value of the range where the beacon should stay in in-order to be considered <q>in-range</q>. Value must be less than <code>beaconMaximumThreshold</code> and within range of (∞, 0). Default value is -85.</td>
+</tr>
+<tr>
+<td><code>beaconMaximumThreshold</code></td>
+<td>The maximum value of the range where the beacon should stay in in-order to be considered <q>in-range</q>. Value must be greater than <code>beaconMinimumThreshold</code> and within range of (∞, 0]. Default value is 0.</td>
+</tr>
+<tr>
+<td><code>beaconExitTrigger</code></td>
+<td>The value where a beacon should be registered as <q>out-of-range</q>. Value must be less than <code>beaconMinimumThreshold</code>. Default value is -90</td>
+</tr>
+<tr>
+<td><code>walkInTimeToWait</code></td>
+<td>The time to wait (seconds) before a beacon is registered when entering its region. Default value is 10 seconds.</td>
+</tr>
+<tr>
+<td><code>walkOutTimeToWait</code></td>
+<td>The time to wait (seconds) before a beacon is registered when exiting its region. Default value is 10 seconds.</td>
+</tr>
+<tr>
+<td><code>subsequentRangingInterval</code></td>
+<td>The time to wait (seconds) between identifying identical beacons. Default value is 6 hours.</td>
+</tr>
+<tr>
+<td><code>enableBackgroundProcessTimeExtension</code></td>
+<td>If <code>true</code>, background process time will be extended while app is in background. Default value is <code>false</code>.</td>
+</tr>
+<tr>
+<td><code>enableContinuousRanging</code></td>
+<td>If <code>true</code>, <code>rsdkDidRangeRayBeacon:inRegionWithIdentifier:</code> will continuously return all ranged beacons. Avoid continuous ranging to conserve battery.</td>
+</tr>
+<tr>
+<td><code>enableCustomWalkOut</code></td>
+<td>If <code>true</code>, <code>rsdkDidWalkOutOfBeacon:inRegionWithIdentifier:</code> will adhere to <code>beaconExitTrigger</code> and <code>walkOutTimeToWait</code> values. Default value is <code>false</code></td>
+</tr>
+</tbody></table>
+
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2015 <a class="link" href="http://seanooi.com" target="_blank" rel="external">Sean Ooi</a>. All rights reserved. (Last updated: 2015-06-17)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.2.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
