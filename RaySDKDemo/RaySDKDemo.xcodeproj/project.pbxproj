@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		147432391B339CF5009498DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147432381B339CF5009498DE /* AppDelegate.swift */; };
+		1474323B1B339CF5009498DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1474323A1B339CF5009498DE /* ViewController.swift */; };
+		1474323E1B339CF5009498DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1474323C1B339CF5009498DE /* Main.storyboard */; };
+		147432411B339CF5009498DE /* RaySDKDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1474323F1B339CF5009498DE /* RaySDKDemo.xcdatamodeld */; };
+		147432431B339CF5009498DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 147432421B339CF5009498DE /* Assets.xcassets */; };
+		147432461B339CF5009498DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 147432441B339CF5009498DE /* LaunchScreen.storyboard */; };
+		147432511B339CF5009498DE /* RaySDKDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147432501B339CF5009498DE /* RaySDKDemoTests.swift */; };
+		1474325C1B339CF5009498DE /* RaySDKDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1474325B1B339CF5009498DE /* RaySDKDemoUITests.swift */; };
+		1474326A1B339D7C009498DE /* BeaconTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147432691B339D7C009498DE /* BeaconTableViewCell.swift */; };
+		1495354D1B34EFF10077341B /* RaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1495354B1B34EFEE0077341B /* RaySDK.framework */; };
+		1495354E1B34EFF10077341B /* RaySDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1495354B1B34EFEE0077341B /* RaySDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1474324D1B339CF5009498DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1474322D1B339CF5009498DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 147432341B339CF5009498DE;
+			remoteInfo = RaySDKDemo;
+		};
+		147432581B339CF5009498DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1474322D1B339CF5009498DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 147432341B339CF5009498DE;
+			remoteInfo = RaySDKDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1474326F1B33A1A3009498DE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1495354E1B34EFF10077341B /* RaySDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		147432351B339CF5009498DE /* RaySDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RaySDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		147432381B339CF5009498DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1474323A1B339CF5009498DE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1474323D1B339CF5009498DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		147432401B339CF5009498DE /* RaySDKDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RaySDKDemo.xcdatamodel; sourceTree = "<group>"; };
+		147432421B339CF5009498DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		147432451B339CF5009498DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		147432471B339CF5009498DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1474324C1B339CF5009498DE /* RaySDKDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RaySDKDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		147432501B339CF5009498DE /* RaySDKDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaySDKDemoTests.swift; sourceTree = "<group>"; };
+		147432521B339CF5009498DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		147432571B339CF5009498DE /* RaySDKDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RaySDKDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1474325B1B339CF5009498DE /* RaySDKDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaySDKDemoUITests.swift; sourceTree = "<group>"; };
+		1474325D1B339CF5009498DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		147432691B339D7C009498DE /* BeaconTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconTableViewCell.swift; sourceTree = "<group>"; };
+		1495354B1B34EFEE0077341B /* RaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RaySDK.framework; path = ../../RaySDK.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		147432321B339CF5009498DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1495354D1B34EFF10077341B /* RaySDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		147432491B339CF5009498DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		147432541B339CF5009498DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1474322C1B339CF5009498DE = {
+			isa = PBXGroup;
+			children = (
+				147432371B339CF5009498DE /* RaySDKDemo */,
+				1474324F1B339CF5009498DE /* RaySDKDemoTests */,
+				1474325A1B339CF5009498DE /* RaySDKDemoUITests */,
+				147432361B339CF5009498DE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		147432361B339CF5009498DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				147432351B339CF5009498DE /* RaySDKDemo.app */,
+				1474324C1B339CF5009498DE /* RaySDKDemoTests.xctest */,
+				147432571B339CF5009498DE /* RaySDKDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		147432371B339CF5009498DE /* RaySDKDemo */ = {
+			isa = PBXGroup;
+			children = (
+				1495354B1B34EFEE0077341B /* RaySDK.framework */,
+				147432381B339CF5009498DE /* AppDelegate.swift */,
+				1474323A1B339CF5009498DE /* ViewController.swift */,
+				147432691B339D7C009498DE /* BeaconTableViewCell.swift */,
+				1474323C1B339CF5009498DE /* Main.storyboard */,
+				147432421B339CF5009498DE /* Assets.xcassets */,
+				147432441B339CF5009498DE /* LaunchScreen.storyboard */,
+				147432471B339CF5009498DE /* Info.plist */,
+				1474323F1B339CF5009498DE /* RaySDKDemo.xcdatamodeld */,
+			);
+			path = RaySDKDemo;
+			sourceTree = "<group>";
+		};
+		1474324F1B339CF5009498DE /* RaySDKDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				147432501B339CF5009498DE /* RaySDKDemoTests.swift */,
+				147432521B339CF5009498DE /* Info.plist */,
+			);
+			path = RaySDKDemoTests;
+			sourceTree = "<group>";
+		};
+		1474325A1B339CF5009498DE /* RaySDKDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1474325B1B339CF5009498DE /* RaySDKDemoUITests.swift */,
+				1474325D1B339CF5009498DE /* Info.plist */,
+			);
+			path = RaySDKDemoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		147432341B339CF5009498DE /* RaySDKDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 147432601B339CF5009498DE /* Build configuration list for PBXNativeTarget "RaySDKDemo" */;
+			buildPhases = (
+				147432311B339CF5009498DE /* Sources */,
+				147432321B339CF5009498DE /* Frameworks */,
+				147432331B339CF5009498DE /* Resources */,
+				1474326F1B33A1A3009498DE /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RaySDKDemo;
+			productName = RaySDKDemo;
+			productReference = 147432351B339CF5009498DE /* RaySDKDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1474324B1B339CF5009498DE /* RaySDKDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 147432631B339CF5009498DE /* Build configuration list for PBXNativeTarget "RaySDKDemoTests" */;
+			buildPhases = (
+				147432481B339CF5009498DE /* Sources */,
+				147432491B339CF5009498DE /* Frameworks */,
+				1474324A1B339CF5009498DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1474324E1B339CF5009498DE /* PBXTargetDependency */,
+			);
+			name = RaySDKDemoTests;
+			productName = RaySDKDemoTests;
+			productReference = 1474324C1B339CF5009498DE /* RaySDKDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		147432561B339CF5009498DE /* RaySDKDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 147432661B339CF5009498DE /* Build configuration list for PBXNativeTarget "RaySDKDemoUITests" */;
+			buildPhases = (
+				147432531B339CF5009498DE /* Sources */,
+				147432541B339CF5009498DE /* Frameworks */,
+				147432551B339CF5009498DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				147432591B339CF5009498DE /* PBXTargetDependency */,
+			);
+			name = RaySDKDemoUITests;
+			productName = RaySDKDemoUITests;
+			productReference = 147432571B339CF5009498DE /* RaySDKDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1474322D1B339CF5009498DE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Yella Inc.";
+				TargetAttributes = {
+					147432341B339CF5009498DE = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					1474324B1B339CF5009498DE = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 147432341B339CF5009498DE;
+					};
+					147432561B339CF5009498DE = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 147432341B339CF5009498DE;
+					};
+				};
+			};
+			buildConfigurationList = 147432301B339CF5009498DE /* Build configuration list for PBXProject "RaySDKDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1474322C1B339CF5009498DE;
+			productRefGroup = 147432361B339CF5009498DE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				147432341B339CF5009498DE /* RaySDKDemo */,
+				1474324B1B339CF5009498DE /* RaySDKDemoTests */,
+				147432561B339CF5009498DE /* RaySDKDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		147432331B339CF5009498DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				147432461B339CF5009498DE /* LaunchScreen.storyboard in Resources */,
+				147432431B339CF5009498DE /* Assets.xcassets in Resources */,
+				1474323E1B339CF5009498DE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1474324A1B339CF5009498DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		147432551B339CF5009498DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		147432311B339CF5009498DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1474323B1B339CF5009498DE /* ViewController.swift in Sources */,
+				147432411B339CF5009498DE /* RaySDKDemo.xcdatamodeld in Sources */,
+				147432391B339CF5009498DE /* AppDelegate.swift in Sources */,
+				1474326A1B339D7C009498DE /* BeaconTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		147432481B339CF5009498DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				147432511B339CF5009498DE /* RaySDKDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		147432531B339CF5009498DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1474325C1B339CF5009498DE /* RaySDKDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1474324E1B339CF5009498DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 147432341B339CF5009498DE /* RaySDKDemo */;
+			targetProxy = 1474324D1B339CF5009498DE /* PBXContainerItemProxy */;
+		};
+		147432591B339CF5009498DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 147432341B339CF5009498DE /* RaySDKDemo */;
+			targetProxy = 147432581B339CF5009498DE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1474323C1B339CF5009498DE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1474323D1B339CF5009498DE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		147432441B339CF5009498DE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				147432451B339CF5009498DE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1474325E1B339CF5009498DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1474325F1B339CF5009498DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		147432611B339CF5009498DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../";
+				INFOPLIST_FILE = RaySDKDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.madewithray.RaySDKDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		147432621B339CF5009498DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../";
+				INFOPLIST_FILE = RaySDKDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.madewithray.RaySDKDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		147432641B339CF5009498DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RaySDKDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.madewithray.RaySDKDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RaySDKDemo.app/RaySDKDemo";
+			};
+			name = Debug;
+		};
+		147432651B339CF5009498DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RaySDKDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.madewithray.RaySDKDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RaySDKDemo.app/RaySDKDemo";
+			};
+			name = Release;
+		};
+		147432671B339CF5009498DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RaySDKDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.madewithray.RaySDKDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RaySDKDemo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		147432681B339CF5009498DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RaySDKDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.madewithray.RaySDKDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RaySDKDemo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		147432301B339CF5009498DE /* Build configuration list for PBXProject "RaySDKDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1474325E1B339CF5009498DE /* Debug */,
+				1474325F1B339CF5009498DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		147432601B339CF5009498DE /* Build configuration list for PBXNativeTarget "RaySDKDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				147432611B339CF5009498DE /* Debug */,
+				147432621B339CF5009498DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		147432631B339CF5009498DE /* Build configuration list for PBXNativeTarget "RaySDKDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				147432641B339CF5009498DE /* Debug */,
+				147432651B339CF5009498DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		147432661B339CF5009498DE /* Build configuration list for PBXNativeTarget "RaySDKDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				147432671B339CF5009498DE /* Debug */,
+				147432681B339CF5009498DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1474323F1B339CF5009498DE /* RaySDKDemo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				147432401B339CF5009498DE /* RaySDKDemo.xcdatamodel */,
+			);
+			currentVersion = 147432401B339CF5009498DE /* RaySDKDemo.xcdatamodel */;
+			path = RaySDKDemo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1474322D1B339CF5009498DE /* Project object */;
+}

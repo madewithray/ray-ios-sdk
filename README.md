@@ -11,7 +11,8 @@ RaySDK is compatible with projects for iOS 8 and above
 
 ##Installation
 1. Drag the **RaySDK.framework** file into your project
-2. Under your peoject's target's _General_ settings, make sure **RaySDK.framework** is included under _Embedded Binaries_ as well as _Linked Frameworks and Libraries_
+2. Under your project's target's _General_ settings, make sure **RaySDK.framework** is included under _Embedded Binaries_ as well as _Linked Frameworks and Libraries_
+3. Under your project's target's _Build_ settings, make sure the path to **RaySDK.framework** is present in _Framework Search Paths_
 	
 ##Usage
 1. Register your _API Key_ by calling `RSDK.sharedInstanceWithApiKey("YourAPIKey")`
