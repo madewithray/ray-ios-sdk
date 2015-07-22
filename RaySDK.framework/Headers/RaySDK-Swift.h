@@ -93,6 +93,15 @@ typedef struct _NSZone NSZone;
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
 
+/// The type of location service authorization to request
+///
+/// <ul><li><p><strong>Always</strong>:    Location services will still run even when app is in background</p></li><li><p><strong>WhenInUse</strong>: Location services will only run when app is in foreground</p></li></ul>
+typedef SWIFT_ENUM(NSInteger, AuthorizationType) {
+  AuthorizationTypeAlways = 0,
+  AuthorizationTypeWhenInUse = 1,
+};
+
+
 /// Represents the current bluetooth state of a device.
 ///
 /// <ul><li><p><strong>Unknown</strong>:      State unknown, update imminent.</p></li><li><p><strong>Resetting</strong>:    The connection with the system service was momentarily lost, update imminent.</p></li><li><p><strong>Unsupported</strong>:  The platform doesn't support the Bluetooth Low Energy Central/Client role.</p></li><li><p><strong>Unauthorized</strong>: The application is not authorized to use the Bluetooth Low Energy Central/Client role.</p></li><li><p><strong>PoweredOff</strong>:   Bluetooth is currently powered off.</p></li><li><p><strong>PoweredOn</strong>:    Bluetooth is currently powered on and available to use.</p></li></ul>
@@ -142,6 +151,9 @@ SWIFT_CLASS("_TtC6RaySDK4RSDK")
 
 /// The RaySDK delegate
 @property (nonatomic, weak) id <RaySDKDelegate> __nullable delegate;
+
+/// Returns true if device is registered as <code>walked-in</code>. False is device is not in range of beacons or has <code>walked-out</code> of range.
+@property (nonatomic) BOOL hasWalkedIn;
 
 /// The value where a beacon should be registered as "in-range"
 ///
@@ -224,6 +236,12 @@ SWIFT_CLASS("_TtC6RaySDK4RSDK")
 
 /// Stop ranging for all currently ranged regions
 - (void)stopRanging;
+
+/// Sets the location service authorization request
+///
+/// <ul><li><p>Always</p></li><li><p>WhenInUse (Default)</p></li></ul>
+/// \param authorizationType The authorization type to request
+- (void)setAuthorizationType:(enum AuthorizationType)type;
 @end
 
 @class CBCentralManager;
