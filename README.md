@@ -28,11 +28,12 @@ __*Additional documentation can be found [here](http://madewithray.github.io/ray
 --- | --- | ---
 `beaconRSSITrigger` | The value where a beacon should be registered as "in-range". Default value is -75.
 `beaconMinimumThreshold` | The minimum value of the range where the beacon should stay in in-order to be considered "in-range". Value must be less than `beaconMaximumThreshold` and within range of (∞, 0). Default value is -85.
-`beaconMaximumThreshold` | The maximum value of the range where the beacon should stay in in-order to be considered "in-range". Value must be greater than `beaconMinimumThreshold` and within range of (∞, 0]. Default value is 0.
-`beaconExitTrigger` | The value where a beacon should be registered as "out-of-range". Value must be less than `beaconMinimumThreshold`. Default value is -90
+`beaconMaximumThreshold` | The maximum value of the range where the beacon should stay in in-order to be considered "in-range". Value must be greater than `beaconMinimumThreshol.d` and within range of (∞, 0]. Default value is 0.
+`beaconExitTrigger` | The value where a beacon should be registered as "out-of-range". Value must be less than `beaconMinimumThreshold`. Default value is -90.
 `walkInTimeToWait` | The time to wait (seconds) before a beacon is registered when entering its region. Default value is 10 seconds.
 `walkOutTimeToWait` | The time to wait (seconds) before a beacon is registered when exiting its region. Default value is 10 seconds.
 `subsequentRangingInterval` | The time to wait (seconds) between identifying identical beacons. Default value is 6 hours.
 `enableBackgroundProcessTimeExtension` | If `true`, background process time will be extended while app is in background. Default value is `false`.
 `enableContinuousRanging` | If `true`, `rsdkDidRangeRayBeacon:inRegionWithIdentifier:` will continuously return all ranged beacons. Avoid continuous ranging to conserve battery.
-`enableCustomWalkOut` | If `true`, `rsdkDidWalkOutOfBeacon:inRegionWithIdentifier:` will adhere to `beaconExitTrigger` and `walkOutTimeToWait` values. Default value is `false`
+`enableCustomWalkOut` | If `true`, `rsdkDidWalkOutOfBeacon:inRegionWithIdentifier:` will adhere to `beaconExitTrigger` and `walkOutTimeToWait` values. Default value is `false`.
+`hasWalkedIn` | Returns true if device is registered as `walked-in`. False is device is not in range of beacons or has `walked-out` of range.
