@@ -326,6 +326,12 @@ SWIFT_CLASS("_TtC6RaySDK4RSDK")
 SWIFT_CLASS("_TtC6RaySDK10RSDKBeacon")
 @interface RSDKBeacon : NSObject
 
+/// Most significant value associated with the beacon.
+@property (nonatomic, readonly) CLBeaconMajorValue major;
+
+/// Least significant value associated with the beacon.
+@property (nonatomic, readonly) CLBeaconMinorValue minor;
+
 /// Proximity of the beacon from the device.
 @property (nonatomic, readonly) CLProximity proximity;
 
